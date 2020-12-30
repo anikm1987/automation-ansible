@@ -2,7 +2,7 @@
 
 # This will setup docker and docker-compose in local machine
 
-ansible-playbook ./operations/setup_docker_local.yml -K --ask-pass -v
+ansible-playbook ./operations/setup_docker_local.yml -K #--ask-pass -v
 
 # post installation of docker install - may include it later in ansible playbook itself
 docker --version
@@ -21,3 +21,5 @@ echo "sudo service docker start" >> ~/.profile
 # Solution - execute below command - sudo add-apt-repository --remove ppa:ansible/ansible
 # as focal release not available in ubuntu 20 yet https://github.com/ansible/ansible/issues/68645
 # https://itsfoss.com/repository-does-not-have-release-file-error-ubuntu/
+
+# For changing docker-compose version - remove it first - sudo rm -f /usr/local/bin/docker-compose
