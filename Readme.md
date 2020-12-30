@@ -17,6 +17,10 @@ Getting Started
     - docker ps  # to see the details
     - update dev/dev_docker for new managed node entries
 
+- To stop development
+    ./stop_managed_docker_nodes.sh
+    - This will remove all managed containers
+
 - Every installation in local machine should be also managed using playbook
 
 
