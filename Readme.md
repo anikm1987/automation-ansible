@@ -10,6 +10,13 @@ Getting Started
 - To run test -
     cd Test/docker && chmod +x test_ansible.sh
     ./test_ansible.sh
+
+- To start development
+    ./start_managed_docker_nodes.sh
+    - This will create two containers as managed nodes where you can start executing ansible scripts
+    - docker ps  # to see the details
+    - update dev/dev_docker for new managed node entries
+
 - Every installation in local machine should be also managed using playbook
 
 
@@ -20,6 +27,7 @@ Features
 - Docker & docker-compose install
 - operations folder contains roles to configure local machine 
 - Added Test folder to test it with docker
+- Added dev folder to start managed nodes for development using docker compose
 
 
 TODO:
