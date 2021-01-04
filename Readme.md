@@ -32,6 +32,7 @@ Features
 - operations folder contains roles to configure local machine 
 - Added Test folder to test it with docker
 - Added dev folder to start managed nodes for development using docker compose
+- Support for Homebrew packages - require addition ruby package to be installed
 
 
 TODO:

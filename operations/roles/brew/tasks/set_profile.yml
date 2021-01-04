@@ -1,0 +1,19 @@
+---
+
+- name: Set path to .profile
+  set_fact:
+    linux_profile_path: "~/.profile"
+  when: linux_profile_path is undefined
+
+- name: Check whether .profile file exists
+  stat:
+    path: "{{ linux_profile_path }}"
+  register: profile_path
+
+- name: Load Linuxbrew in .profile
+  blockinfile:
+    dest: "{{ linux_profile_path }}"
+    marker: "# {mark} Block managed by Ansible: linuxbrew"
+    block: |
+      eval $({{ linuxbrew_path }}/bin/brew shellenv)
+  when: profile_path.stat.exists
