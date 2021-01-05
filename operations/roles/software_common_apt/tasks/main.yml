@@ -18,6 +18,7 @@
     - git
     - aptitude
     - ruby
+    - python3-pip
     state: latest
     # update_cache: yes 
     # force_apt_get: yes

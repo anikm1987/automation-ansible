@@ -2,8 +2,11 @@
 - hosts: localhost
   tasks:
   - include_role:
-      name: software-common-apt
+      name: software_common_apt
 
   - include_role:
       name: brew
+
+  - include_role:
+      name: software_common_brew
   

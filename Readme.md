@@ -44,3 +44,12 @@ TODO:
     - using notifier may be
 
 
+
+Additional Activities
+-------------
+
+To use community roles
+
+ansible-galaxy collection install community.general
+
+
