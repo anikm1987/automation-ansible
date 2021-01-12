@@ -18,7 +18,10 @@
     - git
     - aptitude
     - ruby
-    - python3-pip
+    - python-is-python3  # to fix /usr/bin/env: ‘python’: No such file or directory
+    - openjdk-11-jdk
+    - net-tools
+    - libpq-dev
     state: latest
     # update_cache: yes 
     # force_apt_get: yes

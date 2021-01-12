@@ -41,7 +41,7 @@
       - terraform
       - tmux
       - tree
-      - nodeenv
+      - nodenv
       - azure-cli
     state: present
   register: result
